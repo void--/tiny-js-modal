@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="dist/tiny-js-modal.min.css">
+    <style>
+      .interior a {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="interior">
+        <span role="button" tabindex="0" class="btn" onclick="tjmOpen()" onKeyPress="tjmOpen()">Open Modal</span>
+        <a href="./index.html">See it with some basic styles</a>
+      </div>
+    </div>
+    <div id="tjm" class="tjm">
+      <div  class="tjm-c">
+        <span onclick="tjmClose()" onKeyPress="tjmClose()" title="Close" class="tjm-cb" role="button" tabindex="0">Close</span>
+        <h1>Voilà!</h1>
+        <div>A modal. Hope you find it helpful.</div>
+      </div>
+    </div>
+    <script src="dist/tiny-js-modal.min.js"></script>
+  </body>
+</html>

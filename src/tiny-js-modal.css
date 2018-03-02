@@ -1,0 +1,60 @@
+.tjm {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  transition: all 0.3s;
+}
+
+.tjm-cg,
+.tjm-og {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.05);
+  opacity: 0;
+}
+
+.tjm-cg {
+  transform: none;
+}
+
+.tjm-cg .tjm-c {
+  transform: scale(0.95);
+}
+
+.tjm-o {
+  z-index: 999;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.tjm-c {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  background: #fff;
+}
+
+.tjm-cb {
+  color: #aaa;
+  cursor: default;
+  line-height: 3rem;
+  font-size: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 70px;
+  text-decoration: none;
+}
+
+.tjm-cb:hover {
+  color: #000;
+}
