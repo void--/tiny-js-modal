@@ -8,14 +8,13 @@ function a(c) {
   m().classList.add(c);
 }
 
-// Remove a class from the modal
-function r(c) {
-  m().classList.remove(c);
+// Remove up to two classes from the modal
+function r(c, d) {
+  m().classList.remove(c, d);
 }
 
 function tjmOpen() {
-  r('tjm-c');
-  r('tjm-cg');
+  r('tjm-c', 'tjm-cg');
 
   a('tjm-og');
 
@@ -31,8 +30,7 @@ function tjmOpen() {
 }
 
 function tjmClose() {
-  r('tjm-o');
-  r('tjm-og');
+  r('tjm-o', 'tjm-og');
 
   a('tjm-cg');
 
